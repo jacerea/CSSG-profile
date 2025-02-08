@@ -1,10 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Page Title</title>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Instagram Profile Page</title>
+                <style>
+                    body {
+                        font-family: Arial, sans-serif;
+                        margin: 0;
+                        padding: 0;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        background-color: #fafafa;
+                    }
+                    .profile-header {
+                        width: 100%;
+                        max-width: 710px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        padding: 20px;
+                        border-bottom: 1px solid #dbdbdb;
+                        background: white;
+                    }
+                    .profile-picture {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        background-color: #ccc;
+                        overflow: hidden;
+                    }
+                    .profile-picture img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                    .profile-info {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    .stats {
+                        display: flex;
+                        gap: 20px;
+                    }
+                    .stat {
+                        text-align: center;
+                    }
+                    .stat strong {
+                        display: block;
+                    }
+                    .grid {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        gap: 5px;
+                        width: 100%;
+                        max-width: 750px;
+                        padding: 10px;
+                    }
+                    .grid img {
+                        width: 100%;
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                        background: #ccc;
+                    }
+                </style>
 </head>
+
 <body>
-    <h1>This is a Heading</h1>
-    <p>This is a paragraph.</p>
+    <div class="profile-header">
+        <div class="profile-picture">
+            <img src="public/Jace-Rea-Photo.jpg" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+            <h2>@Jacenickrea</h2>
+            <div class="stats">
+                <div class="stat">
+                    <strong>9</strong>
+                    Posts
+                </div>
+                <div class="stat">
+                    <strong>5000</strong>
+                    Followers
+                </div>
+                <div class="stat">
+                    <strong>1254</strong>
+                    Following
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="grid">
+        <img src="public/Beach1.jpg" alt="Post 1">
+        <img src="public/Beach2.jpg" alt="Post 2">
+        <img src="public/Dog1.jpg" alt="Post 3">
+        <img src="public/Nature1.jpg" alt="Post 4">
+        <img src="public/Nature2.jpg" alt="Post 5">
+        <img src="public/Nature3.jpg" alt="Post 6">
+        <img src="public/night1.jpg" alt="Post 7">
+        <img src="public/Space1.jpg" alt="Post 8">
+        <img src="public/Techno1.jpg" alt="Post 9">
+    </div>
+
 </body>
+
+
 </html>
