@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             <title>Instagram Profile Page</title>
+            <!-- Style section for p much everything you see on the page. Background color, picture size, header w/ profile picture, etc. -->
                 <style>
                     body {
                         font-family: Arial, sans-serif;
@@ -12,7 +13,7 @@
                         display: flex;
                         flex-direction: column;
                         align-items: center;
-                        background-color: #fafafa;
+                        background-color: #D3D3D3;
                     }
                     .profile-header {
                         width: 100%;
@@ -22,7 +23,7 @@
                         justify-content: space-between;
                         padding: 20px;
                         border-bottom: 1px solid #dbdbdb;
-                        background: white;
+                        background: whitesmoke;
                     }
                     .profile-picture {
                         width: 100px;
@@ -68,6 +69,7 @@
                 </style>
 </head>
 
+<!-- This section is for the header of the profile, has the image from the public folder as well as the stats for the instagram follwers, post, and followed -->
 <body>
     <div class="profile-header">
         <div class="profile-picture">
@@ -92,7 +94,7 @@
         </div>
     </div>
 
-    
+    <!-- All these pictures from public folder. Used .gitignore to ensure that you can't see that folder >:) -->
     <div class="grid">
         <img src="public/Beach1.jpg" alt="Post 1">
         <img src="public/Beach2.jpg" alt="Post 2">
